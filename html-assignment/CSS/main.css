@@ -1,0 +1,46 @@
+body{
+    font-family: 'Times New Roman', Times, serif; font-size: 18px;
+}
+
+header, footer{
+    background-color: aquamarine;
+}
+
+/* use dot for Classes */
+.site-title{
+    color:hotpink
+}
+
+/* use hashtag for ID */
+#my-image{
+    box-shadow: 0 0 2px 1px black;
+}
+
+main>section>ul{
+    list-style-type: square;
+}
+
+.hobbies li:nth-child(odd){
+    background: pink;
+}
+
+/* remove bullets*/
+nav>ul{
+    list-style: none;
+}
+
+a:link{
+     text-decoration: none;
+}
+
+a:link{
+    background-color:pink; 
+}
+
+a:link{
+    border: 1px solid black;
+}
+
+a:hover{
+    background-color: chocolate;
+}
