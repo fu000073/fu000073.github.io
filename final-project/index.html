@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wenting Final-project</title>
+    <script src="https://kit.fontawesome.com/653144da1b.js" crossorigin="anonymous"></script>
     <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
@@ -19,8 +20,9 @@
                     <li><a href="#contactus">Contact</a></li>
                     <li><form action="index.html" method="post">
                         <input type="text" id="search" name="Search" placeholder="Search" Value="Search">
-                        <button type="submit">search</button>
-                    </form></li>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        </form>
+                    </li>
                 </ul>
             </nav>
     
@@ -29,7 +31,7 @@
                 <article class="banner">
                     <h1>Welcome to Three Star Media</h1>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed magnam cupiditate sit distinctio, corporis est sapiente molestiae fugit fugiat cumque porro quos voluptatum quod repellat voluptas voluptatem voluptates assumenda ratione.</p>
-                    <a href="#contactus" >Connect with us</a>
+                    <a href="#contactus" >Connect with us<i class="fa-solid fa-caret-right"></i></a>
                 </article>
             </div><!--the end of the section banner -->
         </header>
@@ -52,7 +54,7 @@
                     <div>
                         <h3>Digital Transformation</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus temporibus cum provident asperiores, tempore dicta? Consequatur explicabo, voluptas facere molestiae laudantium labore architecto, beatae quam distinctio nostrum quae quos ut.</p>
-                        <button type="submit">Digital Plans</button>
+                        <button type="submit">Digital Plans<i class="fa-solid fa-caret-right"></i></button>
                     </div>
                 </div>
 
@@ -61,7 +63,7 @@
                     <div>
                         <h3>Marketing</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus temporibus cum provident asperiores, tempore dicta? Consequatur explicabo, voluptas facere molestiae laudantium labore architecto, beatae quam distinctio nostrum quae quos ut.</p>
-                        <button type="submit">Marketing Plans</button>
+                        <button type="submit">Marketing Plans<i class="fa-solid fa-caret-right"></i></button>
                     </div>
                 </div>
 
@@ -70,7 +72,7 @@
                     <div>
                         <h3>Video Production</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus temporibus cum provident asperiores, tempore dicta? Consequatur explicabo, voluptas facere molestiae laudantium labore architecto, beatae quam distinctio nostrum quae quos ut.</p>
-                        <button type="submit">Video Plans</button>
+                        <button type="submit">Video Plans<i class="fa-solid fa-caret-right"></i></button>
                     </div>
                 </div>
 
@@ -79,7 +81,7 @@
                     <div>
                         <h3>Web Development</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus temporibus cum provident asperiores, tempore dicta? Consequatur explicabo, voluptas facere molestiae laudantium labore architecto, beatae quam distinctio nostrum quae quos ut.</p>
-                        <button type="submit">Web Plans</button>
+                        <button type="submit">Web Plans<i class="fa-solid fa-caret-right"></i></button>
                     </div>
                 </div>
 
@@ -88,7 +90,7 @@
                     <div>
                         <h3>Print</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus temporibus cum provident asperiores, tempore dicta? Consequatur explicabo, voluptas facere molestiae laudantium labore architecto, beatae quam distinctio nostrum quae quos ut.</p>
-                        <button type="submit">Print Plans</button>
+                        <button type="submit">Print Plans<i class="fa-solid fa-caret-right"></i></button>
                     </div>
                 </div>
             </section><!-- </div>the end of the services -->
@@ -97,7 +99,7 @@
                 <img src="images/vision.jpg" alt="vision">
                 <h2>Our vision</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi optio blanditiis magni fugiat numquam repudiandae praesentium aliquid alias laborum voluptatem. Repellendus architecto iure rerum temporibus et illum sapiente laboriosam ea.</p>
-                <button type="submit">Learn More</button>
+                <button type="submit">Learn More<i class="fa-solid fa-caret-right"></i></button>
             </section><!--the end of the section vision -->
 
             <section id="ourteam">
@@ -145,12 +147,39 @@
                                 <label for="message"></label>
                                 <textarea id="message" name="message"></textarea>
                             </div>
+                            <div>
+                                <button type="submit">Send</button>
+                            </div>
                         </fieldset>
                     </form>
-
                 </div>
-                <div class="stack"></div>
-                <div class="stack"></div>
+
+                <div class="stack">
+                    <h3>Hours of operation</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Days</th>
+                                <th>Hours</th>
+                            </tr>   
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Monday - Friday</td>
+                                <td>9 AM - 6AM</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday - Sunday</td>
+                                <td>Closed</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="stack">
+                    <h3>Location</h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944455156962!2d-75.75492570000002!3d45.349933500000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1711825095151!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
 
             </section><!--the end of the section contact -->
         </main>
