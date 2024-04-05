@@ -20,6 +20,7 @@ body {
     width:900px;
 }*/
 
+/* header with image inside the text overlay, whith a  */
 header h1 {
     font-size: 3rem;
     color:azure;
@@ -39,7 +40,7 @@ header img {
     margin:0 auto;
 }
 
-
+/* nav */
 nav li {
     font-size: 1.5rem;
     text-transform: uppercase;
@@ -53,7 +54,7 @@ nav li:last-child {
     border-right: none;
 }
 
-
+/* article with text wrapped image */
 article img{
     width: 250px;
     height: auto;
@@ -74,10 +75,15 @@ section {
     margin:1rem;
 }
 
-fieldset {
+/* form */
+.form {
     border: 1px solid black;
     padding:10px;
     box-sizing:border-box;
+}
+
+fieldset {
+    border:none;
 }
 
 input[type=text] {
