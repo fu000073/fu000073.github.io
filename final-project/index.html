@@ -4,29 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wenting Final-project</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <!-- icon font -->
     <script src="https://kit.fontawesome.com/653144da1b.js" crossorigin="anonymous"></script>
     <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
-    <div class="wrapper">
         <header>
-            <nav>
-                <ul>
-                    <li><img src="images/logo.png" alt="logo"></li>
-                    <li><a href="#main-banner">Home</a></li>
-                    <li><a href="#aboutus">About us</a></li>
-                    <li><a href="#ourservices">Services</a></li>
-                    <li><a href="#ourteam">Team</a></li>
-                    <li><a href="#contactus">Contact</a></li>
-                    <li><form action="index.html" method="post">
-                        <input type="text" id="search" name="Search" placeholder="Search" Value="Search">
-                        <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
-                        </form>
-                </ul>
-            </nav>
+            <div class="welcome">
+                <!-- adds the background color/image to the full-width div -->
+                <div class="wrapper-welcome">
+                    <!-- center and give width to the content -->
+                        <nav>
+                        <ul>
+                            <li><img src="images/logo.png" alt="logo" ></li>
+                            <li><a href="#main-banner" class="active">Home</a></li>
+                            <li><a href="#aboutus">About us</a></li>
+                            <li><a href="#ourservices">Services</a></li>
+                            <li><a href="#ourteam">Team</a></li>
+                            <li><a href="#contactus">Contact</a></li>
+                            <li><form action="index.html" method="post">
+                                <input type="text" id="search" name="Search" placeholder="Search" Value="Search">
+                                <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                </form>
+                        </ul>
+                    </nav>
+                </div><!-- </div>the end of div wrapper -->
+            </div><!-- </div>the end of div welcome -->
     
             <div id="main-banner">
-                <img src="images/main-banner.jpg" alt="main-banner">
+                <img src="images/main-banner.jpg" alt="main-banner" class="img--banner">
                 <article class="banner">
                     <h1>Welcome to Three Star Media</h1>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed magnam cupiditate sit distinctio, corporis est sapiente molestiae fugit fugiat cumque porro quos voluptatum quod repellat voluptas voluptatem voluptates assumenda ratione.</p>
@@ -45,10 +55,10 @@
             </section><!--the end of the section about us -->
 
             <section id="ourservices">
-                <div class="block">
+                <div class="block-title">
                     <h2>Our Services</h2>
                 </div>
-                <div class="block">
+                <div class="block-digital">
                     <img src="images/digital.jpg" alt="digital">
                     <div>
                         <h3>Digital Transformation</h3>
@@ -57,7 +67,7 @@
                     </div>
                 </div>
 
-                <div class="block">
+                <div class="block-marketing">
                     <img src="images/marketing.jpg" alt="marketing">
                     <div>
                         <h3>Marketing</h3>
@@ -66,7 +76,7 @@
                     </div>
                 </div>
 
-                <div class="block">
+                <div class="block-video">
                     <img src="images/video.jpg" alt="video">
                     <div>
                         <h3>Video Production</h3>
@@ -75,7 +85,7 @@
                     </div>
                 </div>
 
-                <div class="block">
+                <div class="block-web">
                     <img src="images/web.jpg" alt="web">
                     <div>
                         <h3>Web Development</h3>
@@ -84,7 +94,7 @@
                     </div>
                 </div>
 
-                <div class="block">
+                <div class="block-print">
                     <img src="images/print.jpg" alt="print">
                     <div>
                         <h3>Print</h3>
@@ -94,98 +104,97 @@
                 </div>
             </section><!-- </div>the end of the services -->
             
-            <section>
+            <section class="vision">
                 <img src="images/vision.jpg" alt="vision">
+                <div class="container-vision">
                 <h2>Our vision</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi optio blanditiis magni fugiat numquam repudiandae praesentium aliquid alias laborum voluptatem. Repellendus architecto iure rerum temporibus et illum sapiente laboriosam ea.</p>
                 <button type="button">Learn More<i class="fa-solid fa-caret-right"></i></button>
+                </div><!-- </div>the end of div container vision -->
             </section><!--the end of the section vision -->
 
             <section id="ourteam">
-                <div class="field">
                     <h2>Our Team</h2>
-                </div>
-                <div class="field">
-                    <img src="images/john.jpg" alt="john">
-                </div>
-                <div class="field">
-                    <h3>John Doe</h3>
-                    <h4>CEO and Co-owner</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus temporibus cum provident asperiores, tempore dicta? Consequatur explicabo, voluptas facere molestiae laudantium labore architecto, beatae quam distinctio nostrum quae quos ut.</p> 
-                </div>
-                <div class="field">
-                    <img src="images/bob.jpg" alt="bob">
-                </div>
-                <div class="field">
-                    <h3>Bob Rite</h3>
-                    <h4>CFO and Co-owner</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus temporibus cum provident asperiores, tempore dicta? Consequatur explicabo, voluptas facere molestiae laudantium labore architecto, beatae quam distinctio nostrum quae quos ut. 
+                <div class="flex-ourteam">
+                    <div class="field-img-john">
+                        <img src="images/john.jpg" alt="john">
+                    </div>
+                    <div class="field-john">
+                        <h3>John Doe</h3>
+                        <h4>CEO and Co-owner</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus temporibus cum provident asperiores, tempore dicta? Consequatur explicabo, voluptas facere molestiae laudantium labore architecto, beatae quam distinctio nostrum quae quos ut.</p> 
+                    </div>
+                    <div class="field-img-bob">
+                        <img src="images/bob.jpg" alt="bob">
+                    </div>
+                    <div class="field-bob">
+                        <h3>Bob Rite</h3>
+                        <h4>CFO and Co-owner</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus temporibus cum provident asperiores, tempore dicta? Consequatur explicabo, voluptas facere molestiae laudantium labore architecto, beatae quam distinctio nostrum quae quos ut. 
+                    </div>
                 </div>
             </section><!-- </div>the end of the our team -->
 
             <section id="contactus">
-                <div class="stack">
-                    <h2>Contact Us</h2>
-                </div>
-                <div class="stack">
-                    <h3>Send us a message</h3>
-                    <form action="index.html" method="get" class="form">
-                        <fieldset>
-                            <div>
-                                <p>Full Name</p>
-                                <label for="fullname"></label>
-                                <input id="fullname" type="text" name="fname">
-                            </div>
-                            <div>
-                                <p>Email</p>
-                                <label for="email"></label>
-                                <input id="email" type="text" name="email">
-                            </div>
-                            <div>
-                                <p>Message</p>
-                                <label for="message"></label>
-                                <textarea id="message" name="message"></textarea>
-                            </div>
-                            <div>
-                                <button type="submit">Send</button>
-                            </div>
-                        </fieldset>
-                    </form>
-                </div>
+                <h2>Contact Us</h2>
+                <div class="container-contactus">
+                    <div class="stack-send-us-message">
+                        <h3>Send us a message</h3>
+                        <form action="index.html" method="get" class="form">
+                            <fieldset>
+                                <div>
+                                    <p>Full Name</p>
+                                    <label for="fullname"></label>
+                                    <input id="fullname" type="text" name="fname">
+                                </div>
+                                <div>
+                                    <p>Email</p>
+                                    <label for="email"></label>
+                                    <input id="email" type="text" name="email">
+                                </div>
+                                <div>
+                                    <p>Message</p>
+                                    <label for="message"></label>
+                                    <textarea id="message" name="message"></textarea>
+                                </div>
+                                <div>
+                                    <button type="submit">Send</button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
 
-                <div class="stack">
-                    <h3>Hours of operation</h3>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Days</th>
-                                <th>Hours</th>
-                            </tr>   
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Monday - Friday</td>
-                                <td>9 AM - 6AM</td>
-                            </tr>
-                            <tr>
-                                <td>Saturday - Sunday</td>
-                                <td>Closed</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="stack-hours-of-operation">
+                        <h3>Hours of operation</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Days</th>
+                                    <th>Hours</th>
+                                </tr>   
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Monday - Friday</td>
+                                    <td>9 AM - 6AM</td>
+                                </tr>
+                                <tr>
+                                    <td>Saturday - Sunday</td>
+                                    <td>Closed</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="stack-location">
+                        <h3>Location</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944455156962!2d-75.75492570000002!3d45.349933500000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1711825095151!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div><!-- </div>the end of div container-contactus -->
                 </div>
-                <div class="stack">
-                    <h3>Location</h3>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2803.944455156962!2d-75.75492570000002!3d45.349933500000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1711825095151!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-
-
             </section><!--the end of the section contact -->
         </main>
-        <footer>
-            <div>&copy;copyright Three Star Media,2020</div>
-            <p>All images are taken from <a href="index.html">Unsplash</a></p>
+        <footer class="footer">
+             <p>&copy;copyright Three Star Media,2020</p>
+             <p>All images are taken from <em>Unsplash</em></p>  
         </footer>
-    </div><!-- </div>the end of the class wrapper -->
 </body>
 </html>

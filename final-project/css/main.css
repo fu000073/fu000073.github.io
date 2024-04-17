@@ -1,5 +1,426 @@
 *,
 *::before,
 *::after {
-     
+     box-sizing: border-box;
 }
+
+
+html {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+}
+
+body {
+    
+}
+
+/* nav */
+/* adds the background color */
+.welcome {
+    background-color: #222; 
+}
+
+
+ul {
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+}
+
+nav li {
+    font-size: 1.5rem; 
+}
+
+nav a {
+    color:#c78c06;
+    text-decoration: none; 
+}
+
+nav li img {
+    background-color: #c78c06;
+    
+}
+
+/* change the link color on hover */
+nav a:hover {
+    background-color:#c78c06;
+    transition:0.5s;
+    color:black;
+}
+
+nav a.active {
+    background-color: #c78c06;
+    color:black;
+}
+
+nav button {
+    color:#c78c06;
+    border-color:#c78c06;
+    background-color: #222;
+}
+
+/* banner with image inside the text overlay, whith a  */
+
+#main-banner {
+    position:relative;
+    margin: auto;
+}
+
+.img--banner { 
+    width:100%;
+    
+}
+
+.banner {
+    position:absolute;
+    width:80%;
+    top:20%;
+    margin-left:10%;
+    padding: 1rem;
+    color:white;
+    background-color: rgba(34, 34, 34,0.6);
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.banner a {
+    background-color: #c78c06;
+    text-decoration: none;
+    color: black;
+    padding:15px 25px;
+    text-align: center;
+}
+
+/* article with text wrapped image */
+#aboutus {
+    background-color:#ffe6ac;
+    padding: 1rem;
+}
+
+#aboutus img{
+    float: left;
+    margin: 1rem;
+}
+
+.container {
+    margin:1rem;
+}
+
+.container::after {
+    content: "";
+    display: block;
+    clear: both;
+}  
+
+h2 {
+    font-size: 3rem;
+}
+
+  /* our services grid  */
+#ourservices {
+    width:80%;
+    margin:auto;
+    background-color: white;
+/* center and give width to the content  */
+}
+
+.block-digital {
+    background-color: #ffe6ac;
+}
+
+.block-marketing {
+    background-color: #ffe6ac;
+}
+
+.block-video {
+    background-color: #ffe6ac;
+}
+
+.block-web {
+    background-color: #ffe6ac;
+}
+
+.block-print {
+    background-color: #ffe6ac;
+}
+
+
+/* our services layout of inside block  */
+h3 {
+    font-size: 1.8rem;
+}
+
+.block-digital img,
+.block-marketing img,
+.block-print img,
+.block-title img,
+.block-video img,
+.block-web img {
+    width:100%;
+}
+
+.block-digital div,
+.block-marketing div,
+.block-print div,
+.block-title div,
+.block-video div,
+.block-web {
+    padding: 10px;
+} 
+#ourservices button {
+    background-color: #222;
+    color:white;
+    width:90%;
+    height: 100px;
+    font-size:1.5rem;
+    margin:10px;
+}
+
+/* our vision--article with text wrapped image */
+.vision {
+    position:relative;
+    margin: auto;
+    padding: 1rem;
+}
+
+.vision img{
+    width:90%;
+    margin-left:5%;
+    height:500px;
+}
+
+.container-vision {
+    position:absolute;
+    width:80%;
+    margin:8%;
+    top:0px;
+    color:white;
+}
+
+.container-vision button {
+    color:white;
+    font-size: 2rem;
+    background-color: rgba(34, 34, 34,0.7);
+    border:1px solid #c78c06;
+    width: 250px;
+    height: 100px;
+}
+
+/* ourteam */
+#ourteam {
+    width:80%;
+    margin:auto;
+}
+
+#ourteam div{
+    background-color: #ffe6ac;
+}
+
+#ourteam img {
+    width:100%;
+}
+
+.field-john h4,
+.field-bob h4 {
+    border-bottom:1px solid #c78c06 ;
+}
+
+/* contact us */
+#contactus {
+    width:90%;
+    margin:auto;
+}
+/* send ud a message */
+fieldset {
+    border:none;
+}
+
+fieldset input[type=text] {
+    width:100%;
+    height: 50px;
+}
+
+fieldset textarea {
+    width:100%;
+    height:150px;
+    box-sizing: border-box;
+    resize:none;
+}
+
+fieldset button {
+    background-color:#222;
+    color:#c78c06;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* hours of operation */
+.stack-hours-of-operation table {
+    border-collapse: collapse;
+    padding:20%;
+    width:100%;
+    height:200px;
+    margin:auto;
+
+}
+
+.stack-hours-of-operation table,th,td {
+    border:1px solid black;
+}
+
+.stack-hours-of-operation table thead{
+    background-color: #ffe6ac;
+    height:50px;
+}
+
+.stack-hours-of-operation td {
+    padding-left: 10px;
+
+}
+
+/* location */
+.stack-location iframe {
+    width:100%;
+    margin:auto;
+}
+
+/* footer */
+footer {
+    background-color: #222;
+    color:#c78c06
+}
+
+.footer {
+    width:95%;
+    margin:auto;
+    padding:10px;
+}
+
+em {
+    text-decoration: underline;
+}
+
+/* mobile */
+@media screen and (min-width: 760px) {
+    li {
+        
+    }
+
+    li a,
+    li form {
+        display: block;
+        text-align: center;
+    } 
+}
+
+/*desktop */
+@media screen and (min-width:1200px) {
+   
+    .wrapper-welcome {
+        width:90%;
+        margin:auto;
+        display:flex;
+        justify-content: center;
+    }
+
+    ul {
+       display: flex;
+       justify-content: center;
+    }
+
+    li  {
+        padding:15px;
+    }
+
+    li a, li form {
+        padding:5px;
+        margin-top:20px;
+    }
+    
+   /* our services grid  */
+    #ourservices {
+        display:grid;
+        grid-gap: 15px;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows:120px 1fr 1fr;
+        justify-content: center;
+        /* grid */
+    }
+
+    .block-title {
+        grid-column:1/7 ;
+    }
+
+    .block-digital {
+        grid-column:1/4 ;
+    }
+
+    .block-marketing {
+        grid-column:4/7;
+    }
+
+    .block-video {
+        grid-column:1/3;
+    }
+
+    .block-web {
+        grid-column:3/5;
+    }
+
+    .block-print {
+        grid-column:5/7;
+    }
+
+    /* set flex of our team */
+    .flex-ourteam {
+        display:flex;
+        flex-wrap:wrap;
+    }
+
+    .field-bob,
+    .field-img-bob,
+    .field-img-john,
+    .field-john {
+        width:50%;
+        flex-grow: 1;
+    }
+
+    .field-john {
+        padding:10px;
+    }
+
+    .field-bob {
+        order:1;
+        padding:10px;
+    }
+    
+    .field-img-bob{
+        order:2;
+    }
+
+    /* flex of contact us */
+    .container-contactus {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .stack-send-us-message {
+        flex-grow: 1;
+        width:50%;
+    }
+
+    .stack-hours-of-operation {
+        flex-grow: 1;
+        order:2;
+    }
+
+    .stack-location {
+        flex-grow: 1;
+        order:1;
+        width:50%;
+    }
+}
+
