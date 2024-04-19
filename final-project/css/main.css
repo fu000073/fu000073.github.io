@@ -83,6 +83,7 @@ nav button {
     position:absolute;
     width:80%;
     top:20%;
+    bottom: 20%;
     margin-left:10%;
     padding: 1rem;
     color:white;
@@ -110,6 +111,7 @@ h1 {
 #aboutus img{
     float: left;
     margin: 1rem;
+    width:auto;
 }
 
 .container {
