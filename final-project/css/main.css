@@ -1,3 +1,4 @@
+/* css reset code */
 *,
 *::before,
 *::after {
@@ -10,17 +11,18 @@ html {
     font-size: 18px;
 }
 
-body {
-    
-}
+/* mobile first */
 
+.wrapper-body {
+    width:760px;
+}
 /* nav */
 /* adds the background color */
 .welcome {
     background-color: #222; 
 }
 
-
+/*  mobile nav */
 ul {
     list-style-type: none;
     margin:0;
@@ -30,15 +32,22 @@ ul {
 
 nav li {
     font-size: 1.5rem; 
+    display: block;
 }
 
-nav a {
+li a,
+li form {
+    display:block;
+    text-align: center;
+} 
+
+li a {
     color:#c78c06;
     text-decoration: none; 
 }
 
-nav li img {
-    background-color: #c78c06;
+ li img {
+    width:125px;
     
 }
 
@@ -48,7 +57,7 @@ nav a:hover {
     transition:0.5s;
     color:black;
 }
-
+/* change the bg color on homepage */
 nav a.active {
     background-color: #c78c06;
     color:black;
@@ -169,6 +178,7 @@ h3 {
 .block-video div,
 .block-web {
     padding: 10px;
+    margin:10px;
 } 
 #ourservices button {
     background-color: #222;
@@ -215,13 +225,17 @@ h3 {
     margin:auto;
 }
 
-#ourteam div{
-    background-color: #ffe6ac;
-}
-
 #ourteam img {
     width:100%;
 }
+
+.field-john,
+.field-bob {
+    background-color: #ffe6ac;
+    padding:10px;
+    margin-bottom: 10px;
+    margin-top: -5px;
+} 
 
 .field-john h4,
 .field-bob h4 {
@@ -293,34 +307,25 @@ footer {
     color:#c78c06
 }
 
+  /* content of footer */
 .footer {
     width:95%;
     margin:auto;
-    padding:10px;
+    margin-top: 10px;;
+    padding:15px;
 }
 
 em {
     text-decoration: underline;
 }
 
-/* mobile */
-@media screen and (min-width: 760px) {
-    li {
-        
-    }
-
-    li a,
-    li form {
-        display: block;
-        text-align: center;
-    } 
-}
-
 /*desktop */
 @media screen and (min-width:1200px) {
-   
+    .wrapper-body {
+        width:1200px;
+    }
     .wrapper-welcome {
-        width:90%;
+        width:1200px;
         margin:auto;
         display:flex;
         justify-content: center;
@@ -332,11 +337,11 @@ em {
     }
 
     li  {
-        padding:15px;
+        padding:20px;
     }
 
     li a, li form {
-        padding:5px;
+        padding:10px;
         margin-top:20px;
     }
     
@@ -400,6 +405,12 @@ em {
     .field-img-bob{
         order:2;
     }
+
+    .field-john,
+    .field-bob {
+    margin-bottom: 0px;
+    margin-top: 0px;
+} 
 
     /* flex of contact us */
     .container-contactus {
