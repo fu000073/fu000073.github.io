@@ -13,9 +13,7 @@ html {
 
 /* mobile first */
 
-.wrapper-body {
-    width:760px;
-}
+
 /* nav */
 /* adds the background color */
 .welcome {
@@ -46,9 +44,9 @@ li a {
     text-decoration: none; 
 }
 
- li img {
-    width:125px;
-    
+.logo {
+    background-color: #c78c06;
+    height:150px;
 }
 
 /* change the link color on hover */
@@ -321,14 +319,15 @@ em {
 
 /*desktop */
 @media screen and (min-width:1200px) {
-    .wrapper-body {
-        width:1200px;
-    }
+
     .wrapper-welcome {
         width:1200px;
         margin:auto;
-        display:flex;
         justify-content: center;
+    }
+
+    nav {
+        display: flex;
     }
 
     ul {
@@ -343,6 +342,10 @@ em {
     li a, li form {
         padding:10px;
         margin-top:20px;
+    }
+
+    .logo {
+        background-color:#222;
     }
     
    /* our services grid  */
